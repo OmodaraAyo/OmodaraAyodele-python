@@ -3,8 +3,13 @@ print('')
 
 number = int (input('Enter number: '))
 
-if number // 1000000 == 0 and number % 1 == 0:
-		print("It's a palindrome")
+number1 = number // 10000
+number2 = (number // 1000) % 10
+number3 = (number // 100) % 10
+number4 = (number // 10) % 10
+number5 = number % 10
 
+if number1 == number5 and number2 == number4:
+		print ("It's a palindrome")
 else:
-	print('It is not a palindrome')
+	print ("It's not a palindrome")
