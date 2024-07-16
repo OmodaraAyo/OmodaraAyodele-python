@@ -1,4 +1,4 @@
-print('Enter three integers and get their sum, average, product, the smallest and largest number...')
+print('Enter four integers and get their sum, average, product, the smallest and largest number...')
 
 sum = 0
 average = 0
@@ -9,7 +9,7 @@ for userInput in range(4):
 	userInput = int (input('Enter a number: '))
 	if userInput > Largest:
 		Largest = userInput
-	elif userInput <= smallest:
+	elif userInput < smallest:
 		smallest = userInput
 	sum += userInput
 	product = product * userInput

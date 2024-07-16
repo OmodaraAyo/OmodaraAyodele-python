@@ -1,7 +1,7 @@
-amount_Invested = int (input('How much would you like to invest: '))
+amount_invested = int (input('How much would you like to invest: '))
 print ('\n')
 
-investment_Return = 0.70 
+investment_return = 0.70 
 
 for years in range(1,31):
 	annual_rate = (1 + investment_Return)**years
