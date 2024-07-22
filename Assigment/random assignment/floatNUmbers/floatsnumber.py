@@ -7,10 +7,6 @@ def only_floats (a,b):
 
 	if (b is float(b)):
 		counter += 1
+	
 
-	return print(counter)
-
-only_floats (66.5, 2)
-only_floats (2, 1)
-only_floats (66.5, 2.21)
-only_floats (2, 66.34)
+	return counter
