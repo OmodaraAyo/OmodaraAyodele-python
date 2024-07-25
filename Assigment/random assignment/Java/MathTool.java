@@ -4,6 +4,7 @@ public class MathTool {
 
 		if (firstNumber == type(float) && secondNumber == type(float)){
 			
+			result =
 			return 2;
 		}
 		else if (firstNumber == type(float) && secondNumber != type(float)){

@@ -14,7 +14,5 @@ public class floatNumbers {
 	System.out.println(result);
 
 
-
-
  }
 }
