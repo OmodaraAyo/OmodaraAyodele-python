@@ -4,19 +4,11 @@
 #use the formular (pi * (radius^2)) to find the area of the cylinder and store the result of area and use the formular (area * length) to find the volume of the cylinder and store the result
 #output result of area and volume
 
-def area(radius):
-	pi = 22/7
-	area = pi * (radius**2)
-	return area
-def volume(radius, length):
-	pi = 22/7
-	area = pi * (radius**2)
-	volume = area * length
-	return volume
+import calculator
 	
 radius = int (input('Enter radius: '))
 length = int (input('Enter length: '))
-area_result = area(radius)
+area_result = (calculator.area(radius))
 print(f'Area = {area_result:.2f}')
-volume_result = volume(radius, length)
+volume_result = (calculator.volume(radius, length))
 print(f'Volume = {volume_result:.2f}')

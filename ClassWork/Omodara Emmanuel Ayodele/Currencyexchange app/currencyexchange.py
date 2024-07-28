@@ -5,17 +5,7 @@
 #output result of either user input = 1 or result of user input = 1
 
 
-def usd_to_naira(amount):
-	exchange_rate = 1500
-	amount_to_naira = amount * exchange_rate
-	return amount_to_naira
-def naira_to_usd(amount):
-	exchange_rate = 0.00063
-	amount_to_usd = amount * exchange_rate
-	return amount_to_usd
-
-
-
+import currencyexchangecalculator
 
 user_input = int (input('Enter 0 to convert U.S dollars to Naira || Enter 1 to convert Naira to U.S dollars: '))
 print()
@@ -26,11 +16,11 @@ while user_input != 0 and user_input != 1:
 		print('')
 
 if user_input == 0:
-	currency = float (input('Enter amount: '))
-	amount_to_naira = usd_to_naira(currency)
+	currency = float (input('Enter amount: $'))
+	amount_to_naira = (currencyexchangecalculator.usd_to_naira(currency))
 	print(f'#{amount_to_naira:.2f}')
 
 if user_input == 1:
-	currency = float (input('Enter amount: '))
-	amount_to_usd = naira_to_usd(currency)
+	currency = float (input('Enter amount: #'))
+	amount_to_usd = (currencyexchangecalculator.naira_to_usd(currency))
 	print(f'${amount_to_usd}')
